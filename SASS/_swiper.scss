@@ -1,0 +1,19 @@
+.swiper {
+  height: 40rem;
+
+  .swiper-slide {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: $second-color;
+  }
+  .swiper-pagination-bullet {
+    background-color: $second-color;
+  }
+}

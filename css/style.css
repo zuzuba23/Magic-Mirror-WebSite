@@ -1,0 +1,99 @@
+.main-page .main-page-items button {
+  display: inline-block;
+  height: 2.3rem;
+  width: 6.5rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #98c1d9;
+  color: #250441;
+  font-size: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #250441;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 1rem;
+  background-color: #250441;
+}
+
+header ul {
+  display: flex;
+  gap: 1rem;
+}
+
+header li {
+  list-style: none;
+}
+
+header li a {
+  color: #e0fbfc;
+}
+
+header li a:hover {
+  color: #ee6c4d;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-page {
+  background-image: url("/images/party-one.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.main-page .main-page-items {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: #e0fbfc;
+}
+
+.main-page .main-page-items h1 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.main-page .main-page-items p {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.swiper {
+  height: 40rem;
+}
+
+.swiper .swiper-slide {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  color: #98c1d9;
+}
+
+.swiper .swiper-pagination-bullet {
+  background-color: #98c1d9;
+}
