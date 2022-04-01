@@ -41,13 +41,6 @@ a {
 }
 
 .main-page {
-  background-image: url('/images/party-one.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100%;
-  width: 100%;
-
   .main-page-items {
     height: 100%;
     display: flex;
@@ -73,3 +66,5 @@ a {
 }
 
 @import 'swiper';
+
+@import 'phone';

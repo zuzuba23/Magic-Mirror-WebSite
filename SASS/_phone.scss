@@ -1,0 +1,19 @@
+@media (max-width: 46.63em) {
+  header {
+    display: none;
+  }
+
+  .main-page {
+    .main-page-items {
+      text-align: center;
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 5rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

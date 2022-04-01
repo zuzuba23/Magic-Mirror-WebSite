@@ -1,7 +1,12 @@
+// Swiper
+
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   // direction: 'vertical',
   loop: true,
+
+  speed: 1000,
+  // spaceBetween: 100,
 
   // If we need pagination
   pagination: {
@@ -17,8 +22,8 @@ const swiper = new Swiper('.swiper', {
 
   autoplay: { delay: 4000 },
 
-  // And if we need scrollbar
-  // scrollbar: {
-  //   el: '.swiper-scrollbar',
-  // },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
 });

@@ -1,8 +1,15 @@
+%swiper {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
 .swiper {
   height: 40rem;
 
   .swiper-slide {
-    background-color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,4 +23,19 @@
   .swiper-pagination-bullet {
     background-color: $second-color;
   }
+}
+
+.one {
+  background-image: url('/images/party-one.jpg');
+  @extend %swiper;
+}
+
+.two {
+  background-image: url('/images/party-two.jpg');
+  @extend %swiper;
+}
+
+.three {
+  background-image: url('/images/party-three.jpg');
+  @extend %swiper;
 }
