@@ -14,6 +14,7 @@
     justify-content: center;
     align-items: center;
     font-size: 2rem;
+    @extend %swiper;
   }
 
   .swiper-button-prev,
@@ -23,19 +24,4 @@
   .swiper-pagination-bullet {
     background-color: $second-color;
   }
-}
-
-.one {
-  background-image: url('/images/party-one.jpg');
-  @extend %swiper;
-}
-
-.two {
-  background-image: url('/images/party-two.jpg');
-  @extend %swiper;
-}
-
-.three {
-  background-image: url('/images/party-three.jpg');
-  @extend %swiper;
 }
