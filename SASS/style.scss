@@ -9,7 +9,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: $first-color;
+  // background-color: $first-color;
 }
 
 header {
@@ -66,5 +66,53 @@ a {
 }
 
 @import 'swiper';
+
+.services-container {
+  background-color: $second-color;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+
+  .column {
+    // background-color: $second-color;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 3px;
+    max-width: 20rem;
+
+    img {
+      width: 6rem;
+      border-radius: 3px;
+      margin: 0 auto;
+    }
+
+    h3 {
+      color: $fourth-color;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    p {
+      color: $fourth-color;
+      font-size: 1.1rem;
+    }
+
+    a {
+      color: $fourth-color;
+      font-size: 1.3rem;
+    }
+
+    a::after {
+      content: '';
+      display: block;
+      background-color: $fourth-color;
+      width: 4rem;
+      height: 0.1rem;
+    }
+  }
+}
 
 @import 'phone';

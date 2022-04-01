@@ -1,3 +1,12 @@
+@media (max-width: 68.75em) {
+  .swiper {
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: none;
+    }
+  }
+}
+
 @media (max-width: 46.63em) {
   header {
     display: none;
@@ -8,7 +17,7 @@
       text-align: center;
       h1 {
         font-size: 2.5rem;
-        margin-bottom: 5rem;
+        // margin-bottom: 5rem;
       }
 
       p {
