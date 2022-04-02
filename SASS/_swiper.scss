@@ -9,6 +9,60 @@
 .swiper {
   height: 40rem;
 
+  .overlap-text {
+    position: absolute;
+    background-color: #2f0c49cf;
+    color: $fourth-color;
+    z-index: 2;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 3rem;
+    padding: 1rem;
+    width: 70%;
+    border-radius: 5px;
+  }
+
+  .title-swiper {
+    // position: absolute;
+    // color: white;
+    // z-index: 2;
+    // top: 43%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 200;
+    text-transform: uppercase;
+  }
+
+  .text-swiper {
+    // position: absolute;
+    // color: white;
+    // z-index: 2;
+    // top: 57%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+    font-family: 'Courgette', cursive;
+  }
+
+  .button-swiper {
+    // position: absolute;
+    // z-index: 2;
+    // top: 65%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    width: 6rem;
+    height: 1.7rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+
   .swiper-slide {
     display: flex;
     justify-content: center;

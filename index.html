@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Josefin+Sans&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
@@ -14,64 +15,54 @@
   </head>
   <body>
     <header>
-      <div class="logo">
-        <a href="#"> <img src="images/logo.p" alt="logo" /></a>
-      </div>
       <nav>
         <ul>
-          <li><a href="#"> Acasa </a></li>
           <li><a href="#"> Servicii </a></li>
+          <li><a href="#"> Despre noi </a></li>
           <li><a href="#"> Beneficii </a></li>
+
+          <div class="logo">
+            <a href="#"> <img src="images/logo.png" alt="logo" /></a>
+          </div>
+    
+
           <li><a href="#"> Galerie </a></li>
           <li><a href="#"> Testimoniale </a></li>
           <li><a href="#"> Contact </a></li>
         </ul>
+
       </nav>
+
+        <div class="ham-menu">
+          <img src="images/menu.png" alt="hamburger menu">
+        </div>
+
+      
     </header>
 
     <!-- Slider main container -->
     <div class="swiper">
       <!-- Additional required wrapper -->
+      <div class="overlap-text">
+        <h1 class="title-swiper">If you want to have fun</h1>
+        <p class="text-swiper">Just say cheese</p>
+        <button class="button-swiper">Contact</button>
+      </div>
+
       <div class="swiper-wrapper">
         <!-- Slides -->
 
         <div
           class="swiper-slide"
           style="background-image: url('images/party-one.jpg')"
-        >
-          <div class="main-page">
-            <div class="main-page-items">
-              <h1>Foto Booth pentru petreceri</h1>
-              <p>Lorem ipsum dolor, sit amet consectetu</p>
-              <!-- <button>Contact</button> -->
-            </div>
-          </div>
-        </div>
+        ></div>
 
         <div
           class="swiper-slide"
           style="background-image: url('images/party-two.jpg')"
-        >
-          <div class="main-page">
-            <div class="main-page-items">
-              <h1>Foto Booth pentru petreceri</h1>
-              <p>Lorem ipsum dolor, sit amet consectetu</p>
-              <!-- <button>Contact</button> -->
-            </div>
-          </div>
-        </div>
+        ></div>
 
-        <div
-          class="swiper-slide"
-          style="background-image: url('images/party-three.jpg')"
-        >
-          <div class="main-page">
-            <div class="main-page-items">
-              <h1>Foto Booth pentru petreceri</h1>
-              <p>Lorem ipsum dolor, sit amet consectetu</p>
-              <!-- <button>Contact</button> -->
-            </div>
-          </div>
+          <div class="main-page"></div>
         </div>
         <!-- ... -->
       </div>
@@ -79,8 +70,8 @@
       <div class="swiper-pagination"></div>
 
       <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
+      <!-- <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div> -->
     </div>
 
     <div class="services">
@@ -123,3 +114,10 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   </body>
 </html>
+
+<!-- <div class="main-page">
+  <div class="main-page-items">
+    <h1>Foto Booth pentru petreceri</h1>
+    <button>Contact</button>
+  </div>
+</div> -->
