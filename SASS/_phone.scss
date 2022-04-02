@@ -1,18 +1,10 @@
-@media (max-width: 68.75em) {
-  .swiper {
-    .swiper-button-prev,
-    .swiper-button-next {
-      display: none;
-    }
-  }
-}
-
 @media (max-width: 46.63em) {
   header {
     display: flex;
     justify-content: start;
 
     .logo img {
+      width: 6rem;
       margin-left: 2rem;
     }
 
@@ -30,19 +22,53 @@
         width: 2rem;
       }
     }
+
+    .phone-nav {
+      display: none;
+      position: fixed;
+      z-index: 12;
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: $fourth-color;
+      bottom: 0;
+      top: 0;
+      padding-top: 3rem;
+
+      li {
+        display: flex;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.536);
+        width: 100%;
+        padding: 1rem 2rem;
+        padding-left: 3rem;
+      }
+
+      a:hover {
+        color: $first-color;
+      }
+
+      .close {
+        display: flex;
+        margin-left: auto;
+        margin-right: 1.5rem;
+
+        img {
+          width: 1.1rem;
+          cursor: pointer;
+        }
+      }
+    }
   }
+}
 
-  .main-page {
-    .main-page-items {
-      text-align: center;
-      h1 {
-        font-size: 2.5rem;
-        // margin-bottom: 5rem;
-      }
+.main-page {
+  .main-page-items {
+    text-align: center;
+    h1 {
+      font-size: 2.5rem;
+    }
 
-      p {
-        font-size: 1.5rem;
-      }
+    p {
+      font-size: 1.5rem;
     }
   }
 }

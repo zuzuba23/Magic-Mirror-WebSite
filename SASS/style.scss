@@ -9,8 +9,10 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: $first-color;
+  background-color: $fifth-color;
 }
+
+// Navigation
 
 header {
   display: flex;
@@ -31,7 +33,7 @@ header {
     list-style: none;
 
     a {
-      color: $third-color;
+      color: $fourth-color;
       font-size: 1.3rem;
     }
 
@@ -43,6 +45,25 @@ header {
   .ham-menu {
     display: none;
   }
+
+  .phone-nav {
+    display: none;
+  }
+}
+
+.show {
+  display: flex;
+}
+
+.backgound-black {
+  background-color: rgba(0, 0, 0, 0.708);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 11;
+  display: none;
 }
 
 a {
@@ -51,10 +72,49 @@ a {
 
 @import 'swiper';
 
+// Video
+
+.video-mirror {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1rem;
+  .video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 3px;
+  }
+}
+
+// Servicii
+
+.services-title {
+  text-align: center;
+  color: $fourth-color;
+  h2 {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-family: $second-font;
+  }
+
+  h2::after {
+    content: '';
+    display: block;
+    background-color: $first-color;
+    width: 15rem;
+    height: 0.1rem;
+    margin: 0 auto;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+}
+
 .services-container {
-  background-color: $first-color;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  // background-color: $fifth-color;
+  display: flex;
   gap: 1rem;
   padding: 1rem;
 
@@ -64,16 +124,16 @@ a {
     gap: 1rem;
     flex-direction: column;
     padding: 1rem;
-    border-radius: 10px;
+    border-radius: 5px;
     max-width: 20rem;
     margin: 0 auto;
 
     img {
       width: 7rem;
-      border-radius: 3px;
       margin: 0 auto;
-      padding: 2rem;
-      box-sizing: content-box;
+      // border-radius: 3px;
+      // padding: 2rem;
+      // box-sizing: content-box;
     }
 
     h3 {
@@ -95,9 +155,99 @@ a {
     a::after {
       content: '';
       display: block;
-      background-color: $fourth-color;
+      background-color: $first-color;
       width: 4rem;
       height: 0.1rem;
+    }
+  }
+}
+
+// Preturi
+
+.preturi {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  color: $first-color;
+  text-align: center;
+
+  .pret {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 5px;
+  }
+}
+
+// About us
+
+.despre-noi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 5rem;
+  .image-despre-noi {
+    img {
+      width: 25rem;
+      border: 2px dotted $fourth-color;
+      padding: 0.8rem;
+    }
+  }
+
+  .text-despre-noi {
+    width: 30%;
+    height: 100%;
+    color: $fourth-color;
+
+    h2 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      font-family: $second-font;
+    }
+
+    p {
+      margin-bottom: 3rem;
+      font-size: 1.1rem;
+    }
+
+    h3 {
+      font-family: $second-font;
+      font-size: 1.7rem;
+    }
+
+    ul {
+      margin-left: 1.5rem;
+      margin-top: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.7rem;
+      list-style: circle;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+// Beneficii
+
+.beneficii {
+  display: grid;
+  grid-template-columns: repeat(2, 30%);
+  color: $fourth-color;
+  margin-top: 6rem;
+  justify-content: center;
+  .row {
+    text-align: center;
+    width: 20rem;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+
+    img {
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      margin-bottom: 0.6rem;
     }
   }
 }

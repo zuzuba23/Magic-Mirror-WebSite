@@ -27,3 +27,32 @@ const swiper = new Swiper('.swiper', {
     onlyInViewport: false,
   },
 });
+
+// Hamburger menu
+
+const ham = document
+  .querySelector('.ham')
+  .addEventListener('click', openPhoneMenu);
+
+const phoneMenu = document.querySelector('.phone-nav');
+const background = document.querySelector('.backgound-black');
+background.addEventListener('click', closePhoneMenu);
+
+const closeMenuX = document
+  .querySelector('.close-menu')
+  .addEventListener('click', closeMenuButton);
+
+function openPhoneMenu() {
+  phoneMenu.style.display = 'flex';
+  background.style.display = 'block';
+}
+
+function closePhoneMenu() {
+  phoneMenu.style.display = 'none';
+  background.style.display = 'none';
+}
+
+function closeMenuButton() {
+  phoneMenu.style.display = 'none';
+  background.style.display = 'none';
+}
