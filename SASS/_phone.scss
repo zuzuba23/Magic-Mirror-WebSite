@@ -42,6 +42,10 @@
         padding-left: 3rem;
       }
 
+      a {
+        color: $fifth-color;
+      }
+
       a:hover {
         color: $first-color;
       }
@@ -70,5 +74,57 @@
     p {
       font-size: 1.5rem;
     }
+  }
+}
+
+@media (max-width: 60.31em) {
+  // Services
+
+  .servicii {
+    div:nth-child(3) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .servicii-row {
+    .image-servicii {
+      margin-bottom: 2rem;
+    }
+
+    flex-direction: column;
+    text-align: center;
+
+    p {
+      text-align: start;
+    }
+    button {
+      margin-bottom: 3rem;
+    }
+  }
+
+  // About Us
+
+  .despre-noi {
+    flex-direction: column;
+
+    .text-despre-noi {
+      width: 70%;
+    }
+
+    h2 {
+      margin: 0;
+      text-align: center;
+    }
+
+    h3 {
+      margin: 0;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 78.12em) {
+  .preturi {
+    flex-wrap: wrap;
   }
 }

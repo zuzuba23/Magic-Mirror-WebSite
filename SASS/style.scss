@@ -86,11 +86,17 @@ a {
   }
 }
 
-// Servicii
+// Services
+
+.servicii {
+  padding: 1rem;
+}
 
 .services-title {
   text-align: center;
   color: $fourth-color;
+  max-width: 30rem;
+  margin: 0 auto;
   h2 {
     margin-top: 5rem;
     margin-bottom: 1rem;
@@ -109,72 +115,144 @@ a {
 
   p {
     font-size: 1.1rem;
+    margin-bottom: 5rem;
   }
 }
 
-.services-container {
-  // background-color: $fifth-color;
+.servicii-row {
   display: flex;
-  gap: 1rem;
-  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  color: $fourth-color;
+  gap: 5%;
+  margin-bottom: 2rem;
 
-  .column {
-    background-color: $fourth-color;
-    display: flex;
-    gap: 1rem;
-    flex-direction: column;
-    padding: 1rem;
-    border-radius: 5px;
-    max-width: 20rem;
-    margin: 0 auto;
-
+  .image-servicii {
     img {
-      width: 7rem;
-      margin: 0 auto;
-      // border-radius: 3px;
-      // padding: 2rem;
-      // box-sizing: content-box;
+      max-width: 100%;
+      height: auto;
     }
+  }
 
-    h3 {
-      color: $first-color;
-      font-size: 1.7rem;
-      font-weight: 700;
+  .text-servicii {
+    max-width: 30rem;
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
     }
 
     p {
-      color: $first-color;
-      font-size: 1.2rem;
-    }
-
-    a {
-      color: $first-color;
       font-size: 1.3rem;
     }
 
-    a::after {
-      content: '';
-      display: block;
-      background-color: $first-color;
-      width: 4rem;
-      height: 0.1rem;
+    button {
+      border: none;
+      width: 7rem;
+      height: 2rem;
+      border-radius: 10px;
+      margin-top: 2rem;
+      text-transform: uppercase;
     }
   }
 }
+// .services-container {
+//   // background-color: $fifth-color;
+//   display: flex;
+//   gap: 1rem;
+//   padding: 1rem;
 
-// Preturi
+//   .column {
+//     background-color: $fourth-color;
+//     display: flex;
+//     gap: 1rem;
+//     flex-direction: column;
+//     padding: 1rem;
+//     border-radius: 5px;
+//     max-width: 20rem;
+//     margin: 0 auto;
+
+//     img {
+//       width: 7rem;
+//       margin: 0 auto;
+//       // border-radius: 3px;
+//       // padding: 2rem;
+//       // box-sizing: content-box;
+//     }
+
+//     h3 {
+//       color: $first-color;
+//       font-size: 1.7rem;
+//       font-weight: 700;
+//     }
+
+//     p {
+//       color: $first-color;
+//       font-size: 1.2rem;
+//     }
+
+//     a {
+//       color: $first-color;
+//       font-size: 1.3rem;
+//     }
+
+//     a::after {
+//       content: '';
+//       display: block;
+//       background-color: $first-color;
+//       width: 4rem;
+//       height: 0.1rem;
+//     }
+//   }
+// }
+
+// Prices
 
 .preturi {
   display: flex;
   justify-content: center;
-  gap: 10%;
+  gap: 5%;
   color: $first-color;
   text-align: center;
+  padding: 1rem;
 
   .pret {
-    background-color: white;
+    background-color: $fourth-color;
     padding: 1.5rem;
     border-radius: 5px;
+    margin-top: 5rem;
+
+    p {
+      font-size: 1.5rem;
+      margin: 1rem 0;
+    }
+
+    ul {
+      padding: 0 3rem;
+      text-align: start;
+      margin-bottom: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.8rem;
+      font-size: 1.2rem;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 3px;
+    }
+
+    button {
+      margin-top: 1.5rem;
+      border: none;
+      width: 7rem;
+      height: 2rem;
+      cursor: pointer;
+      border-radius: 5px;
+      background-color: $first-color;
+      color: $fourth-color;
+    }
   }
 }
 
@@ -185,10 +263,12 @@ a {
   align-items: center;
   justify-content: center;
   gap: 3rem;
-  margin-top: 5rem;
+  margin-top: 15rem;
+  padding: 1rem;
   .image-despre-noi {
     img {
-      width: 25rem;
+      max-width: 100%;
+      height: auto;
       border: 2px dotted $fourth-color;
       padding: 0.8rem;
     }
@@ -231,11 +311,14 @@ a {
 // Beneficii
 
 .beneficii {
-  display: grid;
-  grid-template-columns: repeat(2, 30%);
   color: $fourth-color;
-  margin-top: 6rem;
   justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 75rem;
+  margin: 0 auto;
+  margin-top: 15em;
+
   .row {
     text-align: center;
     width: 20rem;
@@ -244,6 +327,7 @@ a {
 
     img {
       margin-bottom: 1rem;
+      width: 3rem;
     }
 
     h3 {

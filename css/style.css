@@ -94,24 +94,31 @@ a {
 }
 
 .overlap-text {
+  position: absolute;
+  background-color: #2f0c4999;
   color: #ffff;
+  top: 21%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
   font-size: 3rem;
   padding: 1rem;
-  width: 70%;
-  border-radius: 5px;
+  width: 50%;
+  border-radius: 3px;
   margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
 }
 
 .title-swiper {
   text-align: center;
-  font-size: 1.7rem;
+  font-size: 2.5rem;
   font-weight: 200;
   text-transform: uppercase;
 }
 
 .text-swiper {
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
   margin-top: 1rem;
   font-family: "Courgette", cursive;
@@ -138,9 +145,15 @@ a {
   border-radius: 3px;
 }
 
+.servicii {
+  padding: 1rem;
+}
+
 .services-title {
   text-align: center;
   color: #ffff;
+  max-width: 30rem;
+  margin: 0 auto;
 }
 
 .services-title h2 {
@@ -161,66 +174,92 @@ a {
 
 .services-title p {
   font-size: 1.1rem;
+  margin-bottom: 5rem;
 }
 
-.services-container {
+.servicii-row {
   display: flex;
-  gap: 1rem;
-  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  color: #ffff;
+  gap: 5%;
+  margin-bottom: 2rem;
 }
 
-.services-container .column {
-  background-color: #ffff;
-  display: flex;
-  gap: 1rem;
-  flex-direction: column;
-  padding: 1rem;
-  border-radius: 5px;
-  max-width: 20rem;
-  margin: 0 auto;
+.servicii-row .image-servicii img {
+  max-width: 100%;
+  height: auto;
 }
 
-.services-container .column img {
-  width: 7rem;
-  margin: 0 auto;
+.servicii-row .text-servicii {
+  max-width: 30rem;
 }
 
-.services-container .column h3 {
-  color: #2f0c49;
-  font-size: 1.7rem;
-  font-weight: 700;
+.servicii-row .text-servicii h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
-.services-container .column p {
-  color: #2f0c49;
-  font-size: 1.2rem;
-}
-
-.services-container .column a {
-  color: #2f0c49;
+.servicii-row .text-servicii p {
   font-size: 1.3rem;
 }
 
-.services-container .column a::after {
-  content: '';
-  display: block;
-  background-color: #2f0c49;
-  width: 4rem;
-  height: 0.1rem;
+.servicii-row .text-servicii button {
+  border: none;
+  width: 7rem;
+  height: 2rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+  text-transform: uppercase;
 }
 
 .preturi {
   display: flex;
   justify-content: center;
-  gap: 10%;
+  gap: 5%;
   color: #2f0c49;
   text-align: center;
+  padding: 1rem;
 }
 
 .preturi .pret {
-  background-color: white;
+  background-color: #ffff;
   padding: 1.5rem;
   border-radius: 5px;
+  margin-top: 5rem;
+}
+
+.preturi .pret p {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.preturi .pret ul {
+  padding: 0 3rem;
+  text-align: start;
+  margin-bottom: 1.5rem;
+}
+
+.preturi .pret li {
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.preturi .pret img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+
+.preturi .pret button {
+  margin-top: 1.5rem;
+  border: none;
+  width: 7rem;
+  height: 2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #2f0c49;
+  color: #ffff;
 }
 
 .despre-noi {
@@ -228,11 +267,13 @@ a {
   align-items: center;
   justify-content: center;
   gap: 3rem;
-  margin-top: 5rem;
+  margin-top: 15rem;
+  padding: 1rem;
 }
 
 .despre-noi .image-despre-noi img {
-  width: 25rem;
+  max-width: 100%;
+  height: auto;
   border: 2px dotted #ffff;
   padding: 0.8rem;
 }
@@ -271,11 +312,13 @@ a {
 }
 
 .beneficii {
-  display: grid;
-  grid-template-columns: repeat(2, 30%);
   color: #ffff;
-  margin-top: 6rem;
   justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 75rem;
+  margin: 0 auto;
+  margin-top: 15em;
 }
 
 .beneficii .row {
@@ -287,6 +330,7 @@ a {
 
 .beneficii .row img {
   margin-bottom: 1rem;
+  width: 3rem;
 }
 
 .beneficii .row h3 {
@@ -332,6 +376,9 @@ a {
     padding: 1rem 2rem;
     padding-left: 3rem;
   }
+  header .phone-nav a {
+    color: #1e0031;
+  }
   header .phone-nav a:hover {
     color: #2f0c49;
   }
@@ -356,4 +403,43 @@ a {
 
 .main-page .main-page-items p {
   font-size: 1.5rem;
+}
+
+@media (max-width: 60.31em) {
+  .servicii div:nth-child(3) {
+    flex-direction: column-reverse;
+  }
+  .servicii-row {
+    flex-direction: column;
+    text-align: center;
+  }
+  .servicii-row .image-servicii {
+    margin-bottom: 2rem;
+  }
+  .servicii-row p {
+    text-align: start;
+  }
+  .servicii-row button {
+    margin-bottom: 3rem;
+  }
+  .despre-noi {
+    flex-direction: column;
+  }
+  .despre-noi .text-despre-noi {
+    width: 70%;
+  }
+  .despre-noi h2 {
+    margin: 0;
+    text-align: center;
+  }
+  .despre-noi h3 {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 78.12em) {
+  .preturi {
+    flex-wrap: wrap;
+  }
 }
