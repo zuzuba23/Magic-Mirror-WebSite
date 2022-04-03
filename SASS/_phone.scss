@@ -109,6 +109,12 @@
 
     .text-despre-noi {
       width: 70%;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
     }
 
     h2 {
@@ -120,11 +126,47 @@
       margin: 0;
       text-align: center;
     }
+
+    .image-despre-noi {
+      display: none;
+    }
+
+    .phone {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
   }
 }
 
 @media (max-width: 78.12em) {
   .preturi {
     flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 85em) {
+  .gallery-title {
+    .gallery {
+      grid-template-columns: repeat(2, 25rem);
+
+      div:nth-child(9) {
+        grid-column: span 2;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 57.5em) {
+  .gallery-title {
+    .gallery {
+      grid-template-columns: 25rem;
+
+      div:nth-child(9) {
+        grid-column: span 1;
+        margin: 0 auto;
+      }
+    }
   }
 }

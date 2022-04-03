@@ -51,7 +51,7 @@ header .phone-nav {
 }
 
 .backgound-black {
-  background-color: rgba(0, 0, 0, 0.708);
+  background-color: rgba(0, 0, 0, 0.54);
   position: fixed;
   top: 0;
   bottom: 0;
@@ -94,16 +94,10 @@ a {
 }
 
 .overlap-text {
-  position: absolute;
-  background-color: #2f0c4999;
   color: #ffff;
-  top: 21%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
   font-size: 3rem;
   padding: 1rem;
-  width: 50%;
   border-radius: 3px;
   margin: 0 auto;
   margin-top: 5rem;
@@ -112,13 +106,13 @@ a {
 
 .title-swiper {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 200;
   text-transform: uppercase;
 }
 
 .text-swiper {
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
   margin-top: 1rem;
   font-family: "Courgette", cursive;
@@ -189,6 +183,7 @@ a {
 .servicii-row .image-servicii img {
   max-width: 100%;
   height: auto;
+  border-radius: 3px;
 }
 
 .servicii-row .text-servicii {
@@ -211,6 +206,7 @@ a {
   border-radius: 10px;
   margin-top: 2rem;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .preturi {
@@ -267,7 +263,7 @@ a {
   align-items: center;
   justify-content: center;
   gap: 3rem;
-  margin-top: 15rem;
+  margin-top: 10rem;
   padding: 1rem;
 }
 
@@ -311,30 +307,85 @@ a {
   font-size: 1.2rem;
 }
 
-.beneficii {
+.despre-noi .phone {
+  display: none;
+}
+
+.title-beneficii {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.title-beneficii h2 {
+  text-align: center;
+  color: #ffff;
+  font-family: "Courgette", cursive;
+  font-size: 2rem;
+}
+
+.container-beneficii {
   color: #ffff;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
   max-width: 75rem;
   margin: 0 auto;
-  margin-top: 15em;
 }
 
-.beneficii .row {
+.container-beneficii .row {
   text-align: center;
   width: 20rem;
   margin: 0 auto;
   margin-bottom: 4rem;
 }
 
-.beneficii .row img {
+.container-beneficii .row img {
   margin-bottom: 1rem;
   width: 3rem;
 }
 
-.beneficii .row h3 {
+.container-beneficii .row h3 {
   margin-bottom: 0.6rem;
+}
+
+.gallery-title h2 {
+  text-align: center;
+  color: #ffff;
+  font-size: 2.5rem;
+  font-family: "Courgette", cursive;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+}
+
+.gallery-title p {
+  text-align: center;
+  margin: 0 auto;
+  color: #ffff;
+  font-size: 1.5rem;
+  max-width: 35rem;
+  margin-bottom: 2rem;
+}
+
+.gallery-title .gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 25rem);
+  justify-content: center;
+  gap: 3rem;
+}
+
+.gallery-title .gallery .gallery-image {
+  cursor: pointer;
+}
+
+.backgound-gallery {
+  background-color: rgba(0, 0, 0, 0.54);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 11;
+  display: none;
 }
 
 @media (max-width: 46.63em) {
@@ -428,6 +479,11 @@ a {
   .despre-noi .text-despre-noi {
     width: 70%;
   }
+  .despre-noi .text-despre-noi ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .despre-noi h2 {
     margin: 0;
     text-align: center;
@@ -436,10 +492,38 @@ a {
     margin: 0;
     text-align: center;
   }
+  .despre-noi .image-despre-noi {
+    display: none;
+  }
+  .despre-noi .phone {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
 }
 
 @media (max-width: 78.12em) {
   .preturi {
     flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 85em) {
+  .gallery-title .gallery {
+    grid-template-columns: repeat(2, 25rem);
+  }
+  .gallery-title .gallery div:nth-child(9) {
+    grid-column: span 2;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 57.5em) {
+  .gallery-title .gallery {
+    grid-template-columns: 25rem;
+  }
+  .gallery-title .gallery div:nth-child(9) {
+    grid-column: span 1;
+    margin: 0 auto;
   }
 }
