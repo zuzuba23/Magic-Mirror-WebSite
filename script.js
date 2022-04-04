@@ -3,6 +3,11 @@
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   // direction: 'vertical',
+  slidesPerView: 'auto',
+  spaceBetween: 40,
+
+  centeredSlides: true,
+  grabCursor: true,
   loop: true,
 
   speed: 1000,
@@ -15,10 +20,10 @@ const swiper = new Swiper('.swiper', {
   },
 
   // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+  // navigation: {
+  //   nextEl: '.swiper-button-next',
+  //   prevEl: '.swiper-button-prev',
+  // },
 
   autoplay: { delay: 4000 },
 

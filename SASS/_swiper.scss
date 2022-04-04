@@ -1,84 +1,60 @@
-%swiper {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100%;
-  width: 100%;
-}
-
 .swiper {
-  height: 40rem;
+  height: 25rem;
 
-  .swiper-slide {
-    display: flex;
-    justify-content: center;
+  .swiper-wrapper {
     align-items: center;
-    font-size: 2rem;
-    @extend %swiper;
-  }
 
-  .swiper-button-prev,
-  .swiper-button-next {
-    color: $second-color;
-  }
-  .swiper-pagination-bullet {
-    background-color: $second-color;
+    .swiper-slide {
+      border-radius: 7px;
+      display: flex;
+      justify-content: center;
+
+      .testimonial {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: $fourth-color;
+        width: 20rem;
+        text-align: center;
+
+        img {
+          border-radius: 50%;
+          width: 5rem;
+          height: 5rem;
+          object-fit: cover;
+          margin-bottom: 2rem;
+        }
+
+        span {
+          color: red;
+        }
+
+        h3 {
+          font-size: 1rem;
+          margin-top: 1.5rem;
+        }
+      }
+    }
   }
 }
 
-.overlap-text {
-  // position: absolute;
-  // background-color: #2f0c4999;
-  color: $fourth-color;
-  // z-index: 2;
-  // top: 21%;
-  // left: 50%;
-  // transform: translate(-50%, -50%);
+.title-testimonials {
   text-align: center;
-  font-size: 3rem;
-  padding: 1rem;
-  // width: 50%;
-  border-radius: 3px;
+  color: $fourth-color;
+  // width: 25rem;
   margin: 0 auto;
   margin-top: 5rem;
-  margin-bottom: 2rem;
-}
 
-.title-swiper {
-  // position: absolute;
-  // color: white;
-  // z-index: 2;
-  // top: 43%;
-  // left: 50%;
-  // transform: translate(-50%, -50%);
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 200;
-  text-transform: uppercase;
-}
+  h2 {
+    font-family: $second-font;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
 
-.text-swiper {
-  // position: absolute;
-  // color: white;
-  // z-index: 2;
-  // top: 57%;
-  // left: 50%;
-  // transform: translate(-50%, -50%);
-  font-size: 2rem;
-  text-align: center;
-  margin-top: 1rem;
-  font-family: $second-font;
-}
-
-.button-swiper {
-  // position: absolute;
-  // z-index: 2;
-  // top: 65%;
-  // left: 50%;
-  // transform: translate(-50%, -50%);
-  width: 6rem;
-  height: 1.7rem;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
+  p {
+    font-size: 1.5rem;
+    // width: 28rem;
+    margin: 0 auto;
+  }
 }

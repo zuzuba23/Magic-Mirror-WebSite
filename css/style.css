@@ -65,34 +65,6 @@ a {
   text-decoration: none;
 }
 
-.swiper .swiper-slide {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100%;
-  width: 100%;
-}
-
-.swiper {
-  height: 40rem;
-}
-
-.swiper .swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-}
-
-.swiper .swiper-button-prev,
-.swiper .swiper-button-next {
-  color: #a44cd3;
-}
-
-.swiper .swiper-pagination-bullet {
-  background-color: #a44cd3;
-}
-
 .overlap-text {
   color: #ffff;
   text-align: center;
@@ -104,26 +76,18 @@ a {
   margin-bottom: 2rem;
 }
 
-.title-swiper {
+.overlap-text h1 {
   text-align: center;
   font-size: 2rem;
   font-weight: 200;
   text-transform: uppercase;
 }
 
-.text-swiper {
+.overlap-text p {
   font-size: 2rem;
   text-align: center;
   margin-top: 1rem;
   font-family: "Courgette", cursive;
-}
-
-.button-swiper {
-  width: 6rem;
-  height: 1.7rem;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
 }
 
 .video-mirror {
@@ -373,6 +337,69 @@ a {
   gap: 3rem;
 }
 
+.gallery-title .gallery img {
+  border-radius: 3px;
+}
+
+.swiper {
+  height: 25rem;
+}
+
+.swiper .swiper-wrapper {
+  align-items: center;
+}
+
+.swiper .swiper-wrapper .swiper-slide {
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+}
+
+.swiper .swiper-wrapper .swiper-slide .testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffff;
+  width: 20rem;
+  text-align: center;
+}
+
+.swiper .swiper-wrapper .swiper-slide .testimonial img {
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+.swiper .swiper-wrapper .swiper-slide .testimonial span {
+  color: red;
+}
+
+.swiper .swiper-wrapper .swiper-slide .testimonial h3 {
+  font-size: 1rem;
+  margin-top: 1.5rem;
+}
+
+.title-testimonials {
+  text-align: center;
+  color: #ffff;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+.title-testimonials h2 {
+  font-family: "Courgette", cursive;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.title-testimonials p {
+  font-size: 1.5rem;
+  margin: 0 auto;
+}
+
 @media (max-width: 46.63em) {
   header {
     display: flex;
@@ -505,10 +532,15 @@ a {
 
 @media (max-width: 57.5em) {
   .gallery-title .gallery {
-    grid-template-columns: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  .gallery-title .gallery div:nth-child(9) {
+  .gallery-title .gallery img {
+    width: 20rem !important;
+  }
+  .gallery-title .gallery a:nth-child(9) {
     grid-column: span 1;
-    margin: 0 auto;
+    margin: 0;
   }
 }

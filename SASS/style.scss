@@ -70,7 +70,30 @@ a {
   text-decoration: none;
 }
 
-@import 'swiper';
+.overlap-text {
+  color: $fourth-color;
+  text-align: center;
+  font-size: 3rem;
+  padding: 1rem;
+  border-radius: 3px;
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+    font-family: $second-font;
+  }
+}
 
 // Video
 
@@ -377,10 +400,12 @@ a {
     justify-content: center;
     gap: 3rem;
 
-    // .gallery-image {
-    //   cursor: pointer;
-    // }
+    img {
+      border-radius: 3px;
+    }
   }
 }
+
+@import 'swiper';
 
 @import 'phone';
