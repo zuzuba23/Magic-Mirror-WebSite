@@ -59,15 +59,17 @@ function closeMenuButton() {
 
 // Gallery
 
-const images = document.querySelectorAll('.photo-booth-image');
+lightGallery(document.querySelector('.gallery'));
 
-images.forEach((image) => {
-  image.addEventListener('click', () => {
-    image.style.position = 'fixed';
-    image.style.top = '50%';
-    image.style.left = '50%';
-    image.style.transform = 'translate(-50%, -50%)';
-    image.style.zIndex = '12';
-    background.style.display = 'block';
-  });
-});
+// const images = document.querySelectorAll('.photo-booth-image');
+
+// images.forEach((image) => {
+//   image.addEventListener('click', () => {
+//     image.style.position = 'fixed';
+//     image.style.top = '50%';
+//     image.style.left = '50%';
+//     image.style.transform = 'translate(-50%, -50%)';
+//     image.style.zIndex = '12';
+//     background.style.display = 'block';
+//   });
+// });

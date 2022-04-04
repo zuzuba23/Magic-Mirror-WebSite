@@ -373,21 +373,6 @@ a {
   gap: 3rem;
 }
 
-.gallery-title .gallery .gallery-image {
-  cursor: pointer;
-}
-
-.backgound-gallery {
-  background-color: rgba(0, 0, 0, 0.54);
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 11;
-  display: none;
-}
-
 @media (max-width: 46.63em) {
   header {
     display: flex;
@@ -512,7 +497,7 @@ a {
   .gallery-title .gallery {
     grid-template-columns: repeat(2, 25rem);
   }
-  .gallery-title .gallery div:nth-child(9) {
+  .gallery-title .gallery a:nth-child(9) {
     grid-column: span 2;
     margin: 0 auto;
   }

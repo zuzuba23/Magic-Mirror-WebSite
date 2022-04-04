@@ -377,21 +377,10 @@ a {
     justify-content: center;
     gap: 3rem;
 
-    .gallery-image {
-      cursor: pointer;
-    }
+    // .gallery-image {
+    //   cursor: pointer;
+    // }
   }
-}
-
-.backgound-gallery {
-  background-color: rgba(0, 0, 0, 0.54);
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 11;
-  display: none;
 }
 
 @import 'phone';
