@@ -52,8 +52,12 @@
     margin-bottom: 1rem;
   }
 
+  p {
+    font-size: 1.3rem;
+  }
+
   .testimonial-text {
-    width: 28rem;
+    max-width: 28rem;
     margin: 0 auto;
   }
 }
