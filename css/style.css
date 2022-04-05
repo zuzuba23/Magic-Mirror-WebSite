@@ -395,8 +395,8 @@ a {
   margin-bottom: 1rem;
 }
 
-.title-testimonials p {
-  font-size: 1.5rem;
+.title-testimonials .testimonial-text {
+  width: 28rem;
   margin: 0 auto;
 }
 
