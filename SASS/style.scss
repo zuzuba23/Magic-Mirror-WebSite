@@ -9,7 +9,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: $fifth-color;
+  background-color: $main-back-color;
 }
 
 // Navigation
@@ -17,7 +17,7 @@ body {
 header {
   display: flex;
   justify-content: center;
-  background-color: $first-color;
+  background-color: $second-back-color;
 
   .logo img {
     width: 8rem;
@@ -33,12 +33,12 @@ header {
     list-style: none;
 
     a {
-      color: $fourth-color;
+      color: $main-color;
       font-size: 1.3rem;
     }
 
     a:hover {
-      color: $fourth-color;
+      color: $main-color;
     }
   }
 
@@ -56,7 +56,7 @@ header {
 }
 
 .backgound-black {
-  background-color: rgba(0, 0, 0, 0.54);
+  background-color: $main-back-color;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -71,13 +71,12 @@ a {
 }
 
 .overlap-text {
-  color: $fourth-color;
   text-align: center;
   font-size: 3rem;
   padding: 1rem;
   border-radius: 3px;
   margin: 0 auto;
-  margin-top: 5rem;
+  margin-top: 3rem;
   margin-bottom: 2rem;
 
   h1 {
@@ -85,13 +84,15 @@ a {
     font-size: 2rem;
     font-weight: 200;
     text-transform: uppercase;
+    color: $second-color;
   }
 
   p {
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
     margin-top: 1rem;
     font-family: $second-font;
+    color: $main-color;
   }
 }
 
@@ -113,27 +114,29 @@ a {
 
 .servicii {
   padding: 1rem;
+  background-color: $second-back-color;
+  margin-top: 3rem;
 }
 
 .services-title {
   text-align: center;
-  color: $fourth-color;
+  color: $main-color;
   max-width: 30rem;
   margin: 0 auto;
   h2 {
-    margin-top: 5rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
     font-size: 2rem;
     font-family: $second-font;
-  }
+    position: relative;
 
-  h2::after {
-    content: '';
-    display: block;
-    background-color: $first-color;
-    width: 15rem;
-    height: 0.1rem;
-    margin: 0 auto;
+    span {
+      @extend %span;
+    }
+
+    span::after {
+      @extend %span-after;
+    }
   }
 
   p {
@@ -146,9 +149,9 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: $fourth-color;
-  gap: 5%;
-  margin-bottom: 2rem;
+  color: $main-color;
+  gap: 10%;
+  margin-bottom: 5rem;
 
   .image-servicii {
     img {
@@ -163,6 +166,16 @@ a {
     h2 {
       font-size: 2rem;
       margin-bottom: 2rem;
+
+      span {
+        @extend %span;
+        margin: 0;
+        margin-top: 0.5rem;
+      }
+
+      span::after {
+        @extend %span-after;
+      }
     }
 
     p {
@@ -170,96 +183,51 @@ a {
     }
 
     button {
-      border: none;
-      width: 7rem;
-      height: 2rem;
-      border-radius: 10px;
-      margin-top: 2rem;
-      text-transform: uppercase;
-      cursor: pointer;
+      @extend %btn;
+      width: 10rem;
     }
   }
 }
-// .services-container {
-//   // background-color: $fifth-color;
-//   display: flex;
-//   gap: 1rem;
-//   padding: 1rem;
-
-//   .column {
-//     background-color: $fourth-color;
-//     display: flex;
-//     gap: 1rem;
-//     flex-direction: column;
-//     padding: 1rem;
-//     border-radius: 5px;
-//     max-width: 20rem;
-//     margin: 0 auto;
-
-//     img {
-//       width: 7rem;
-//       margin: 0 auto;
-//       // border-radius: 3px;
-//       // padding: 2rem;
-//       // box-sizing: content-box;
-//     }
-
-//     h3 {
-//       color: $first-color;
-//       font-size: 1.7rem;
-//       font-weight: 700;
-//     }
-
-//     p {
-//       color: $first-color;
-//       font-size: 1.2rem;
-//     }
-
-//     a {
-//       color: $first-color;
-//       font-size: 1.3rem;
-//     }
-
-//     a::after {
-//       content: '';
-//       display: block;
-//       background-color: $first-color;
-//       width: 4rem;
-//       height: 0.1rem;
-//     }
-//   }
-// }
 
 // Prices
 
 .preturi {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 5%;
-  color: $first-color;
   text-align: center;
-  padding: 1rem;
+  padding: 5rem 1rem;
 
   .pret {
-    background-color: $fourth-color;
-    padding: 1.5rem;
-    border-radius: 5px;
-    margin-top: 5rem;
+    background-color: lighten($second-back-color, 10%);
+    padding: 0.5rem;
+    border-radius: 3px;
+    transition: margin 0.3s ease-in-out;
+    box-shadow: 0px 0px 10px $second-color;
 
     p {
       font-size: 1.5rem;
       margin: 1rem 0;
+      color: $second-color;
     }
 
     ul {
-      padding: 0 3rem;
-      text-align: start;
+      // text-align: start;
       margin-bottom: 1.5rem;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
     li {
       margin-bottom: 0.8rem;
       font-size: 1.2rem;
+      color: $main-color;
+      list-style: none;
+      text-align: center;
     }
 
     img {
@@ -269,15 +237,16 @@ a {
     }
 
     button {
-      margin-top: 1.5rem;
-      border: none;
-      width: 7rem;
-      height: 2rem;
-      cursor: pointer;
-      border-radius: 5px;
-      background-color: $first-color;
-      color: $fourth-color;
+      @extend %btn;
     }
+
+    h2 {
+      color: $second-color;
+    }
+  }
+
+  .pret:hover {
+    margin-top: -1rem;
   }
 }
 
@@ -288,37 +257,56 @@ a {
   align-items: center;
   justify-content: center;
   gap: 3rem;
-  margin-top: 10rem;
-  padding: 1rem;
+  padding: 5rem 0;
+  background-color: $second-back-color;
+  margin: 0 auto;
 
   .image-despre-noi {
     img {
       max-width: 100%;
       height: auto;
-      border: 2px dotted $fourth-color;
+      border: 2px dotted $main-color;
+      border-color: $second-color;
       padding: 0.8rem;
     }
   }
 
   .text-despre-noi {
-    width: 30%;
-    height: 100%;
-    color: $fourth-color;
+    max-width: 40rem;
+    color: $main-color;
 
     h2 {
       margin-bottom: 1rem;
-      font-size: clamp(1.3rem, 2.3rem, 5rem);
+      font-size: clamp(1.2rem, 2.3rem, 5rem);
       font-family: $second-font;
+
+      span {
+        @extend %span;
+        margin-top: 0.3rem;
+      }
+
+      span:after {
+        @extend %span-after;
+      }
     }
 
     p {
       margin-bottom: 3rem;
-      font-size: clamp(1.1rem, 1.5rem, 2rem);
+      font-size: clamp(1.1rem, 1.3rem, 10rem);
     }
 
     h3 {
       font-family: $second-font;
       font-size: 1.7rem;
+
+      span {
+        @extend %span;
+        margin-top: 0.3rem;
+      }
+
+      span:after {
+        @extend %span-after;
+      }
     }
 
     ul {
@@ -329,7 +317,12 @@ a {
     li {
       margin-bottom: 0.7rem;
       list-style: circle;
-      font-size: clamp(1.1rem, 1.5rem, 3rem);
+      font-size: clamp(0.7rem, 1.2rem, 3rem);
+      text-align: start;
+    }
+
+    button {
+      @extend %btn;
     }
   }
 
@@ -345,14 +338,23 @@ a {
   margin-bottom: 3rem;
   h2 {
     text-align: center;
-    color: $fourth-color;
+    color: $main-color;
     font-family: $second-font;
     font-size: 2rem;
+
+    span {
+      @extend %span;
+      margin-top: 0.3rem;
+    }
+
+    span:after {
+      @extend %span-after;
+    }
   }
 }
 
 .container-beneficii {
-  color: $fourth-color;
+  color: $main-color;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
@@ -364,10 +366,13 @@ a {
     width: 20rem;
     margin: 0 auto;
     margin-bottom: 4rem;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 1px 1px 10px $second-color;
 
     img {
       margin-bottom: 1rem;
-      width: 3rem;
+      width: 3.5rem;
     }
 
     h3 {
@@ -377,9 +382,10 @@ a {
 }
 
 .gallery-title {
+  background-color: $second-back-color;
   h2 {
     text-align: center;
-    color: $fourth-color;
+    color: $main-color;
     font-size: 2.5rem;
     font-family: $second-font;
     margin-bottom: 1.5rem;
@@ -388,7 +394,7 @@ a {
   p {
     text-align: center;
     margin: 0 auto;
-    color: $fourth-color;
+    color: $main-color;
     font-size: 1.5rem;
     max-width: 35rem;
     margin-bottom: 2rem;
@@ -410,7 +416,7 @@ a {
 
 .contact {
   .contact-title {
-    color: $fourth-color;
+    color: $main-color;
     max-width: 25rem;
     margin: 0 auto;
     text-align: center;
@@ -440,14 +446,14 @@ a {
     .phone {
       display: flex;
       align-items: center;
-      color: $fourth-color;
+      color: $main-color;
       gap: 1rem;
     }
 
     .email {
       display: flex;
       align-items: center;
-      color: $fourth-color;
+      color: $main-color;
       gap: 1rem;
     }
   }

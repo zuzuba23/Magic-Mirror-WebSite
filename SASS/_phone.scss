@@ -29,7 +29,7 @@
       z-index: 12;
       flex-direction: column;
       align-items: flex-start;
-      background-color: $fourth-color;
+      background-color: $main-color;
       bottom: 0;
       top: 0;
       padding-top: 3rem;
@@ -43,11 +43,11 @@
       }
 
       a {
-        color: $fifth-color;
+        color: $second-color;
       }
 
       a:hover {
-        color: $first-color;
+        color: $second-color;
       }
 
       .close {
@@ -87,28 +87,41 @@
   }
 
   .servicii-row {
+    .text-servicii {
+      margin: 0 auto;
+
+      h2 {
+        span {
+          margin: 0 auto;
+          margin-top: 0.5rem;
+        }
+      }
+
+      p {
+        text-align: start;
+      }
+      button {
+        margin-bottom: 3rem;
+      }
+    }
+
     .image-servicii {
       margin-bottom: 2rem;
     }
 
     flex-direction: column;
     text-align: center;
-
-    p {
-      text-align: start;
-    }
-    button {
-      margin-bottom: 3rem;
-    }
   }
+}
+// About Us
 
-  // About Us
-
+@media (max-width: 71.87em) {
   .despre-noi {
     flex-direction: column;
 
     .text-despre-noi {
       width: 70%;
+      text-align: center;
 
       ul {
         display: flex;
@@ -142,6 +155,15 @@
 @media (max-width: 78.12em) {
   .preturi {
     flex-wrap: wrap;
+
+    .pret {
+      margin-top: 3rem;
+      transition: none;
+    }
+
+    .pret:hover {
+      margin-top: 3rem;
+    }
   }
 }
 
