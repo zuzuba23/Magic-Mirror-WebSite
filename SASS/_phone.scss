@@ -128,16 +128,24 @@
         flex-direction: column;
         align-items: center;
       }
-    }
 
-    h2 {
-      margin: 0;
-      text-align: center;
-    }
+      h2 {
+        margin: 0;
+        text-align: center;
 
-    h3 {
-      margin: 0;
-      text-align: center;
+        span {
+          margin: 0.5rem auto;
+        }
+      }
+
+      h3 {
+        margin: 0;
+        text-align: center;
+
+        span {
+          margin: 0 auto;
+        }
+      }
     }
 
     .image-despre-noi {
@@ -196,6 +204,24 @@
       a:nth-child(9) {
         grid-column: span 1;
         margin: 0;
+      }
+    }
+  }
+}
+
+// Swiper
+
+@media (max-width: 42.5em) {
+  .swiper {
+    height: 38rem;
+    .testimonial {
+      flex-direction: column;
+      width: 20rem;
+
+      .image-testimonial {
+        img {
+          margin-bottom: 0;
+        }
       }
     }
   }

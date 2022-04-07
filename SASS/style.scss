@@ -278,10 +278,10 @@ a {
     h2 {
       margin-bottom: 1rem;
       font-size: clamp(1.2rem, 2.3rem, 5rem);
-      font-family: $second-font;
 
       span {
         @extend %span;
+        margin: 0;
         margin-top: 0.3rem;
       }
 
@@ -301,6 +301,7 @@ a {
 
       span {
         @extend %span;
+        margin: 0;
         margin-top: 0.3rem;
       }
 
@@ -339,7 +340,6 @@ a {
   h2 {
     text-align: center;
     color: $main-color;
-    font-family: $second-font;
     font-size: 2rem;
 
     span {
@@ -360,6 +360,7 @@ a {
   flex-wrap: wrap;
   max-width: 75rem;
   margin: 0 auto;
+  padding: 3rem 0;
 
   .row {
     text-align: center;
@@ -377,12 +378,14 @@ a {
 
     h3 {
       margin-bottom: 0.6rem;
+      color: $second-color;
     }
   }
 }
 
 .gallery-title {
   background-color: $second-back-color;
+  padding: 3rem 0;
   h2 {
     text-align: center;
     color: $main-color;
@@ -390,6 +393,15 @@ a {
     font-family: $second-font;
     margin-bottom: 1.5rem;
     margin-top: 2rem;
+
+    span {
+      @extend %span;
+      margin-top: 0.3rem;
+    }
+
+    span:after {
+      @extend %span-after;
+    }
   }
   p {
     text-align: center;
@@ -412,9 +424,14 @@ a {
   }
 }
 
+@import 'swiper';
+
 // Contact
 
 .contact {
+  background-color: $main-back-color;
+  padding: 3rem 0;
+  display: flex;
   .contact-title {
     color: $main-color;
     max-width: 25rem;
@@ -437,6 +454,7 @@ a {
   .contact-ways {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     gap: 4rem;
     flex-wrap: wrap;
     img {
@@ -458,7 +476,5 @@ a {
     }
   }
 }
-
-@import 'swiper';
 
 @import 'phone';
