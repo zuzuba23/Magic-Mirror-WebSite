@@ -428,53 +428,138 @@ a {
 
 // Contact
 
-.contact {
-  background-color: $main-back-color;
-  padding: 3rem 0;
-  display: flex;
-  .contact-title {
-    color: $main-color;
-    max-width: 25rem;
-    margin: 0 auto;
-    text-align: center;
+// .contact {
+//   background-color: $second-back-color;
+//   padding: 3rem 0;
+//   display: flex;
+//   .contact-title {
+//     color: $main-color;
+//     max-width: 25rem;
+//     margin: 0 auto;
+//     text-align: center;
 
+//     h2 {
+//       font-family: $second-font;
+//       font-size: 3rem;
+//       margin-bottom: 1.4rem;
+//       margin-top: 3rem;
+//     }
+
+//     p {
+//       font-size: 1.5rem;
+//       margin-bottom: 2rem;
+//     }
+//   }
+
+//   .contact-ways {
+//     display: flex;
+//     justify-content: center;
+//     flex-direction: column;
+//     gap: 4rem;
+//     flex-wrap: wrap;
+//     img {
+//       width: 2rem;
+//     }
+
+//     .phone {
+//       display: flex;
+//       align-items: center;
+//       color: $main-color;
+//       gap: 1rem;
+//     }
+
+//     .email {
+//       display: flex;
+//       align-items: center;
+//       color: $main-color;
+//       gap: 1rem;
+//     }
+//   }
+// }
+
+// Appointment
+
+.appointment {
+  background-color: $second-color;
+  margin: 3rem;
+  padding: 2rem;
+  color: $main-back-color;
+  max-width: 55rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 3px;
+
+  .appointment-title {
     h2 {
-      font-family: $second-font;
-      font-size: 3rem;
-      margin-bottom: 1.4rem;
-      margin-top: 3rem;
+      font-size: 1.8rem;
+      margin-bottom: 0.7rem;
     }
 
     p {
-      font-size: 1.5rem;
-      margin-bottom: 2rem;
+      opacity: 0.8;
+      font-size: 0.9rem;
     }
   }
 
-  .contact-ways {
+  img {
+    width: 3rem;
+  }
+
+  .number-contact {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
-    gap: 4rem;
-    flex-wrap: wrap;
-    img {
-      width: 2rem;
-    }
+    gap: 0.6rem;
 
-    .phone {
-      display: flex;
-      align-items: center;
-      color: $main-color;
-      gap: 1rem;
-    }
-
-    .email {
-      display: flex;
-      align-items: center;
-      color: $main-color;
-      gap: 1rem;
+    h2 {
+      a {
+        color: $main-back-color;
+      }
     }
   }
+
+  .email-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+
+    h2 {
+      a {
+        color: $main-back-color;
+      }
+    }
+  }
+}
+
+.title-contact {
+  text-align: center;
+  color: $main-color;
+  h2 {
+    font-size: 2.5rem;
+    span {
+      @extend %span;
+      margin-top: 0.3rem;
+    }
+
+    span:after {
+      @extend %span-after;
+    }
+  }
+
+  p {
+    max-width: 28rem;
+    margin: 0.7rem auto 3rem auto;
+    font-size: 1.3;
+  }
+}
+
+.contact {
+  background-color: $second-back-color;
+  padding: 3rem 1rem;
 }
 
 @import 'phone';
