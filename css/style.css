@@ -76,19 +76,16 @@ header li a {
 }
 
 header li a:hover {
-  color: #ffff;
+  text-decoration: underline #1db9df;
 }
 
 header .ham-menu {
   display: none;
+  cursor: pointer;
 }
 
 header .phone-nav {
   display: none;
-}
-
-.show {
-  display: flex;
 }
 
 .backgound-black {
@@ -740,36 +737,37 @@ footer a:hover {
   header .ham-menu img {
     width: 2rem;
   }
-  header .phone-nav {
-    display: none;
-    position: fixed;
+  header .side-nav-phone .phone-nav {
     z-index: 12;
+    position: fixed;
+    background-color: #232222;
+    display: none;
     flex-direction: column;
     align-items: flex-start;
-    background-color: #ffff;
     bottom: 0;
     top: 0;
     padding-top: 3rem;
+    width: 14rem;
   }
-  header .phone-nav li {
+  header .side-nav-phone .phone-nav li {
     display: flex;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.536);
+    border-bottom: 1px solid rgba(14, 13, 13, 0.955);
     width: 100%;
     padding: 1rem 2rem;
     padding-left: 3rem;
   }
-  header .phone-nav a {
-    color: #1db9df;
+  header .side-nav-phone .phone-nav a {
+    color: #ffff;
   }
-  header .phone-nav a:hover {
-    color: #1db9df;
+  header .side-nav-phone .phone-nav a:hover {
+    text-decoration: underline #1db9df;
   }
-  header .phone-nav .close {
+  header .side-nav-phone .phone-nav .close {
     display: flex;
     margin-left: auto;
     margin-right: 1.5rem;
   }
-  header .phone-nav .close img {
+  header .side-nav-phone .phone-nav .close img {
     width: 1.1rem;
     cursor: pointer;
   }
@@ -996,4 +994,47 @@ footer a:hover {
   .footer-nav .footer-social .fa {
     margin-top: 0;
   }
+}
+
+/* Termns and conditions */
+.terms-conditions {
+  color: #ffff;
+}
+
+.terms-conditions h1 {
+  margin: 2rem;
+  font-size: 1.7rem;
+}
+
+.terms-conditions h2 {
+  margin: 1rem;
+}
+
+.terms-conditions p {
+  opacity: 0.9;
+  margin-left: 1rem;
+}
+
+.terms-conditions ul {
+  margin-left: 2rem;
+  opacity: 0.9;
+}
+
+/* privacy policy */
+.privacy-policy {
+  color: #ffff;
+}
+
+.privacy-policy h1 {
+  margin: 2rem;
+  font-size: 1.7rem;
+}
+
+.privacy-policy h2 {
+  margin: 1rem;
+}
+
+.privacy-policy p {
+  opacity: 0.9;
+  margin-left: 1rem;
 }

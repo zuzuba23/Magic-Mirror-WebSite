@@ -34,6 +34,7 @@ const swiper = new Swiper('.swiper', {
 });
 
 // Hamburger menu
+const body = document.querySelector('body');
 
 const ham = document
   .querySelector('.ham')
@@ -49,17 +50,26 @@ const closeMenuX = document
 
 function openPhoneMenu() {
   phoneMenu.style.display = 'flex';
+  // phoneMenu.classList.add('show');
   background.style.display = 'block';
+  body.style.overflow = 'hidden';
 }
 
 function closePhoneMenu() {
+  // phoneMenu.classList.remove('show');
+
   phoneMenu.style.display = 'none';
   background.style.display = 'none';
+  body.style.overflow = 'auto';
 }
 
 function closeMenuButton() {
+  // phoneMenu.classList.remove('show');
+
   phoneMenu.style.display = 'none';
+
   background.style.display = 'none';
+  body.style.overflow = 'auto';
 }
 
 // Gallery

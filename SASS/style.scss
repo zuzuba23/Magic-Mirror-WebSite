@@ -38,12 +38,13 @@ header {
     }
 
     a:hover {
-      color: $main-color;
+      text-decoration: underline $second-color;
     }
   }
 
   .ham-menu {
     display: none;
+    cursor: pointer;
   }
 
   .phone-nav {
@@ -51,9 +52,10 @@ header {
   }
 }
 
-.show {
-  display: flex;
-}
+// .show {
+//   transform: translateX(-100%);
+//   width: 16rem;
+// }
 
 .backgound-black {
   background-color: $main-back-color;
@@ -201,6 +203,7 @@ a {
 
   .pret {
     background-color: lighten($second-back-color, 10%);
+    // background-color: $main-back-color;
     padding: 0.5rem;
     border-radius: 3px;
     transition: margin 0.3s ease-in-out;
@@ -672,3 +675,5 @@ footer {
 }
 
 @import 'phone';
+
+@import 'GDPR';
