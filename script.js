@@ -1,38 +1,38 @@
 // Swiper
+if (window.location.pathname == '/index.html') {
+  const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    // direction: 'vertical',
+    slidesPerView: 'auto',
+    spaceBetween: 40,
 
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  // direction: 'vertical',
-  slidesPerView: 'auto',
-  spaceBetween: 40,
+    centeredSlides: true,
+    grabCursor: true,
+    loop: true,
 
-  centeredSlides: true,
-  grabCursor: true,
-  loop: true,
+    speed: 1000,
+    // spaceBetween: 100,
 
-  speed: 1000,
-  // spaceBetween: 100,
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
+    // Navigation arrows
+    // navigation: {
+    //   nextEl: '.swiper-button-next',
+    //   prevEl: '.swiper-button-prev',
+    // },
 
-  // Navigation arrows
-  // navigation: {
-  //   nextEl: '.swiper-button-next',
-  //   prevEl: '.swiper-button-prev',
-  // },
+    autoplay: { delay: 4000 },
 
-  autoplay: { delay: 4000 },
-
-  keyboard: {
-    enabled: true,
-    onlyInViewport: false,
-  },
-});
-
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
+  });
+}
 // Hamburger menu
 const body = document.querySelector('body');
 
@@ -107,5 +107,6 @@ socials.forEach((social) => {
 });
 
 // Gallery
-
-lightGallery(document.querySelector('.gallery'));
+if (window.location.pathname == '/index.html') {
+  lightGallery(document.querySelector('.gallery'));
+}
