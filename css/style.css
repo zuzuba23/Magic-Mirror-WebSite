@@ -792,6 +792,31 @@ footer a:hover {
   }
 }
 
+.page-up-btn {
+  position: fixed;
+  border-radius: 50%;
+  background-color: rgba(14, 13, 13, 0.955);
+  border: 1px solid #1db9df;
+  height: 3rem;
+  width: 3rem;
+  right: 3rem;
+  bottom: 4rem;
+  z-index: 5;
+  opacity: 0.9;
+}
+
+.page-up-btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  cursor: pointer;
+}
+
+.page-up-btn a img {
+  width: 2rem;
+}
+
 @media (max-width: 46.63em) {
   header {
     display: flex;
@@ -884,28 +909,22 @@ footer a:hover {
     margin: 0 auto;
     margin-bottom: 2rem;
   }
-}
-
-@media (max-width: 31.25em) {
-  .message-header {
-    flex-direction: column;
-    align-items: center;
-  }
-  .message-header .tag {
-    margin-bottom: 1rem;
+  .contact-header .message-header {
+    justify-content: space-between;
+    width: 100%;
   }
 }
 
-.main-page .main-page-items {
-  text-align: center;
-}
-
-.main-page .main-page-items h1 {
-  font-size: 2.5rem;
-}
-
-.main-page .main-page-items p {
-  font-size: 1.5rem;
+@media (max-width: 28.25em) {
+  .contact-header .message-header .tag {
+    gap: 6px;
+  }
+  .contact-header .message-header .tag a {
+    font-size: 0.8rem;
+  }
+  .contact-header .message-header .tag img {
+    width: 1.8rem;
+  }
 }
 
 @media (max-width: 60.31em) {

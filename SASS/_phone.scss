@@ -102,31 +102,43 @@
       margin: 0 auto;
       margin-bottom: 2rem;
     }
-  }
-}
 
-@media (max-width: 31.25em) {
-  .message-header {
-    flex-direction: column;
-    align-items: center;
-    .tag {
-      margin-bottom: 1rem;
+    .message-header {
+      justify-content: space-between;
+      width: 100%;
     }
   }
 }
 
-.main-page {
-  .main-page-items {
-    text-align: center;
-    h1 {
-      font-size: 2.5rem;
-    }
+@media (max-width: 28.25em) {
+  .contact-header {
+    .message-header {
+      .tag {
+        gap: 6px;
+        a {
+          font-size: 0.8rem;
+        }
 
-    p {
-      font-size: 1.5rem;
+        img {
+          width: 1.8rem;
+        }
+      }
     }
   }
 }
+
+// .main-page {
+//   .main-page-items {
+//     text-align: center;
+//     h1 {
+//       font-size: 2.5rem;
+//     }
+
+//     p {
+//       font-size: 1.5rem;
+//     }
+//   }
+// }
 
 @media (max-width: 60.31em) {
   // Services

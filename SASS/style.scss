@@ -744,6 +744,33 @@ footer {
   }
 }
 
+// Go up button
+
+.page-up-btn {
+  position: fixed;
+  border-radius: 50%;
+  background-color: $main-back-color;
+  border: 1px solid $second-color;
+  height: 3rem;
+  width: 3rem;
+  right: 3rem;
+  bottom: 4rem;
+  z-index: 5;
+  opacity: 0.9;
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  a img {
+    width: 2rem;
+  }
+}
+
 @import 'phone';
 
 @import 'GDPR';
