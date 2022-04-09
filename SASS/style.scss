@@ -1,6 +1,10 @@
 @import 'config';
 @import 'buttons';
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +14,68 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: $main-back-color;
+}
+
+// Message Header
+.contact-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: $main-back-color;
+  border-bottom: 2px solid $second-back-color;
+
+  .message-header {
+    color: $main-color;
+    display: flex;
+    gap: 1rem;
+
+    .tag {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      cursor: pointer;
+
+      img {
+        width: 2.5rem;
+      }
+
+      a {
+        color: $main-color;
+      }
+
+      a:hover {
+        color: $second-color;
+      }
+    }
+  }
+
+  .header-social {
+    display: flex;
+    height: fit-content;
+    a {
+      color: $main-color;
+      margin-right: 1rem;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+    .fa {
+      font-size: 1.5rem;
+      height: 2.5rem;
+      width: 2.5rem;
+      text-align: center;
+      border: 1.5px solid $second-color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+    }
+
+    .fa:hover {
+      border: 1.5px solid $main-color;
+    }
+  }
 }
 
 // Navigation
@@ -51,11 +117,6 @@ header {
     display: none;
   }
 }
-
-// .show {
-//   transform: translateX(-100%);
-//   width: 16rem;
-// }
 
 .backgound-black {
   background-color: $main-back-color;
@@ -471,6 +532,10 @@ a {
       a {
         color: $main-color;
       }
+
+      a:hover {
+        color: $second-color;
+      }
     }
   }
 
@@ -572,8 +637,13 @@ footer {
     width: 3.5rem;
   }
 
-  p {
+  a {
     font-size: 1.3rem;
+  }
+
+  a:hover {
+    color: $second-color;
+    text-decoration: none;
   }
 
   .mail {

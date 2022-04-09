@@ -24,24 +24,24 @@
     }
 
     .side-nav-phone {
+      z-index: 12;
+      position: fixed;
+      background-color: $second-back-color;
+      top: 0;
+      padding-top: 3rem;
+      width: 0;
+      height: 100vh;
+      transition: width 0.5s ease;
       .phone-nav {
-        z-index: 12;
-        position: fixed;
-        background-color: $second-back-color;
-        display: none;
+        display: flex;
         flex-direction: column;
         align-items: flex-start;
-        bottom: 0;
-        top: 0;
-        padding-top: 3rem;
-        width: 14rem;
-
+        opacity: 0;
         li {
           display: flex;
           border-bottom: 1px solid $main-back-color;
-          width: 100%;
-          padding: 1rem 2rem;
-          padding-left: 3rem;
+          width: 16rem;
+          padding: 1rem 0 1rem 4rem;
         }
 
         a {
@@ -54,18 +54,67 @@
 
         .close {
           display: flex;
-          margin-left: auto;
-          margin-right: 1.5rem;
+          margin: 0 1.5rem 1rem auto;
 
           img {
             width: 1.1rem;
             cursor: pointer;
           }
         }
+
+        .header-social {
+          display: flex;
+          height: fit-content;
+          margin: 0 auto;
+          a {
+            color: $main-color;
+            margin-top: 2rem;
+            margin-right: 1rem;
+          }
+
+          a:hover {
+            text-decoration: none;
+          }
+          .fa {
+            font-size: 1.5rem;
+            height: 2.5rem;
+            width: 2.5rem;
+            text-align: center;
+            border: 1.5px solid $second-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+          }
+
+          .fa:hover {
+            border: 1.5px solid $main-color;
+          }
+        }
       }
     }
   }
+
+  .contact-header {
+    flex-direction: column;
+    align-items: center;
+    .header-social {
+      margin: 0 auto;
+      margin-bottom: 2rem;
+    }
+  }
 }
+
+@media (max-width: 31.25em) {
+  .message-header {
+    flex-direction: column;
+    align-items: center;
+    .tag {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
 .main-page {
   .main-page-items {
     text-align: center;

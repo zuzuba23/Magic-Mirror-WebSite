@@ -48,29 +48,63 @@ const closeMenuX = document
   .querySelector('.close-menu')
   .addEventListener('click', closeMenuButton);
 
+const nav = document.querySelector('.side-nav-phone ');
+
 function openPhoneMenu() {
-  phoneMenu.style.display = 'flex';
-  // phoneMenu.classList.add('show');
   background.style.display = 'block';
   body.style.overflow = 'hidden';
+  nav.style.width = '16rem';
+  phoneMenu.style.opacity = '1';
+  phoneMenu.style.transition = 'opacity 0.5s 0.3s ease';
+
+  phoneMenu.style.visibility = 'visible';
 }
 
 function closePhoneMenu() {
-  // phoneMenu.classList.remove('show');
-
-  phoneMenu.style.display = 'none';
   background.style.display = 'none';
   body.style.overflow = 'auto';
+  nav.style.width = '0';
+  phoneMenu.style.opacity = '0';
+  phoneMenu.style.transition = 'opacity .1s ease';
+
+  phoneMenu.style.visibility = 'hidden';
 }
 
 function closeMenuButton() {
-  // phoneMenu.classList.remove('show');
-
-  phoneMenu.style.display = 'none';
-
   background.style.display = 'none';
   body.style.overflow = 'auto';
+  phoneMenu.style.opacity = '0';
+  phoneMenu.style.transition = 'opacity .1s ease';
+  nav.style.width = '0';
+
+  phoneMenu.style.visibility = 'hidden';
 }
+
+const links = document.querySelectorAll('.phone-links');
+links.forEach((link) => {
+  link.addEventListener('click', () => {
+    background.style.display = 'none';
+    body.style.overflow = 'auto';
+    phoneMenu.style.opacity = '0';
+    phoneMenu.style.transition = 'opacity .1s ease';
+    nav.style.width = '0';
+
+    phoneMenu.style.visibility = 'hidden';
+  });
+});
+
+const socials = document.querySelectorAll('.socials');
+socials.forEach((social) => {
+  social.addEventListener('click', () => {
+    background.style.display = 'none';
+    body.style.overflow = 'auto';
+    phoneMenu.style.opacity = '0';
+    phoneMenu.style.transition = 'opacity .1s ease';
+    nav.style.width = '0';
+
+    phoneMenu.style.visibility = 'hidden';
+  });
+});
 
 // Gallery
 
