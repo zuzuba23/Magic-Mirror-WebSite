@@ -304,7 +304,6 @@ a {
   background-color: #3d3b3b;
   padding: 0.5rem;
   border-radius: 3px;
-  transition: margin 0.3s ease-in-out;
   box-shadow: 0px 0px 10px #1db9df;
   height: 45rem;
 }
@@ -348,10 +347,6 @@ a {
 
 .preturi div:nth-child(2) h2 {
   margin-top: 2.2rem;
-}
-
-.preturi .pret:hover {
-  margin-top: -1rem;
 }
 
 .despre-noi {
