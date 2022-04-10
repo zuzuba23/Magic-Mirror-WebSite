@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"
@@ -146,25 +148,31 @@
       <div class="servicii-row">
         <div class="image-servicii">
           <img
+            data-aos="fade-right"
+            data-aos-duration="2000"
             src="images/services-one.jpg"
             alt="people taking a photo with funny masks and hats "
           />
         </div>
 
         <div class="text-servicii">
-          <h2>Nunti si Botezuri <span></span></h2>
-          <p>
+          <h2 data-aos="fade-down" data-aos-duration="2000">
+            Nunti si Botezuri <span></span>
+          </h2>
+          <p data-aos="fade-left" data-aos-duration="2000">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid,
             cum. ipsum dolor sit amet, consectetur adipisicing elit. Officia
             sequi nobis blanditiis totam eaque iure minima quam veniam quo
             consequatur.
           </p>
           <br />
-          <p>
+          <p data-aos="fade-left" data-aos-duration="2000">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum,
             perspiciatis. ipsum dolor sit amet, consectetur adipisicing elit.
           </p>
-          <button><a href="#pret"> Alege pachetul </a></button>
+          <button data-aos="fade-up" data-aos-duration="2000">
+            <a href="#pret"> Alege pachetul </a>
+          </button>
         </div>
       </div>
 
@@ -681,6 +689,10 @@
         <p>Created by NC Design</p>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
