@@ -25,7 +25,7 @@ if (window.location.pathname == '/index.html') {
     //   prevEl: '.swiper-button-prev',
     // },
 
-    autoplay: { delay: 4000 },
+    autoplay: { delay: 3000 },
 
     keyboard: {
       enabled: true,
