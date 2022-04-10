@@ -582,6 +582,17 @@ a {
   margin: 0 auto;
 }
 
+@media (max-width: 42.5em) {
+  .swiper .swiper-wrapper .swiper-slide .testimonial {
+    flex-direction: column;
+    width: 25rem;
+    gap: 1rem;
+  }
+  .swiper .swiper-wrapper .swiper-slide .testimonial .image-testimonial img {
+    margin-bottom: 0;
+  }
+}
+
 .appointment {
   background-color: rgba(14, 13, 13, 0.955);
   color: #ffff;
@@ -1049,23 +1060,6 @@ footer a:hover {
   .gallery-title .gallery a:nth-child(9) {
     grid-column: span 1;
     margin: 0;
-  }
-}
-
-@media (max-width: 42.5em) {
-  .testimonials {
-    padding: 1.5rem;
-  }
-  .testimonials .swiper {
-    height: 45rem;
-  }
-  .testimonials .swiper .swiper-wrapper .swiper-slide .testimonial {
-    flex-direction: column;
-    max-width: 25rem;
-    gap: 1rem;
-  }
-  .testimonials .swiper .swiper-wrapper .swiper-slide .testimonial .image-testimonial img {
-    margin-bottom: 0;
   }
 }
 

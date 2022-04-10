@@ -94,3 +94,29 @@
     }
   }
 }
+
+@media (max-width: 42.5em) {
+  // .testimonials {
+  // padding: 1.5rem;
+  .swiper {
+    // height: 45rem;
+    // height: 45rem;
+    .swiper-wrapper {
+      .swiper-slide {
+        .testimonial {
+          flex-direction: column;
+          // width: 20rem;
+          width: 25rem;
+          gap: 1rem;
+
+          .image-testimonial {
+            img {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// }
