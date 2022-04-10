@@ -144,7 +144,8 @@
   // Services
 
   .servicii {
-    div:nth-child(3) {
+    div:nth-child(3),
+    div:nth-child(5) {
       flex-direction: column-reverse;
     }
   }
@@ -275,18 +276,24 @@
 // Swiper
 
 @media (max-width: 42.5em) {
-  .swiper {
-    height: 34rem;
-    .swiper-wrapper {
-      .swiper-slide {
-        .testimonial {
-          flex-direction: column;
-          width: 20rem;
-          gap: 1rem;
+  .testimonials {
+    padding: 1.5rem;
+    .swiper {
+      // height: 45rem;
+      height: 45rem;
+      .swiper-wrapper {
+        .swiper-slide {
+          .testimonial {
+            flex-direction: column;
+            // width: 20rem;
+            max-width: 25rem;
 
-          .image-testimonial {
-            img {
-              margin-bottom: 0;
+            gap: 1rem;
+
+            .image-testimonial {
+              img {
+                margin-bottom: 0;
+              }
             }
           }
         }
