@@ -583,12 +583,20 @@ a {
 }
 
 @media (max-width: 42.5em) {
-  .swiper .swiper-wrapper .swiper-slide .testimonial {
+  .testimonials {
+    padding: 1.5rem;
+  }
+  .testimonials .swiper {
+    height: 45rem;
+    height: 45rem;
+  }
+  .testimonials .swiper .swiper-wrapper .swiper-slide .testimonial {
     flex-direction: column;
+    width: 20rem;
     width: 25rem;
     gap: 1rem;
   }
-  .swiper .swiper-wrapper .swiper-slide .testimonial .image-testimonial img {
+  .testimonials .swiper .swiper-wrapper .swiper-slide .testimonial .image-testimonial img {
     margin-bottom: 0;
   }
 }
