@@ -315,11 +315,10 @@ body {
   justify-content: center;
   margin: 0 auto;
   padding: 1rem;
+  height: 40rem;
 }
 
 .video-mirror .video {
-  max-width: 100%;
-  height: auto;
   border-radius: 3px;
 }
 
@@ -1166,6 +1165,12 @@ footer a:hover {
   .appointment .appointment-title {
     max-width: 20rem;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 43.75em) {
+  .video-mirror {
+    height: 20rem;
   }
 }
 
