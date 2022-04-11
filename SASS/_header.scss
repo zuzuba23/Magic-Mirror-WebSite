@@ -1,0 +1,271 @@
+// Message Header
+.contact-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: $main-back-color;
+  border-bottom: 2px solid $second-back-color;
+
+  .message-header {
+    color: $main-color;
+    display: flex;
+    gap: 1rem;
+
+    .tag {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      cursor: pointer;
+
+      img {
+        width: 2.5rem;
+      }
+
+      a {
+        color: $main-color;
+      }
+
+      a:hover {
+        color: $second-color;
+      }
+    }
+  }
+
+  .header-social {
+    display: flex;
+    height: fit-content;
+    a {
+      color: $main-color;
+      margin-right: 1rem;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+    .fa {
+      font-size: 1.5rem;
+      height: 2.5rem;
+      width: 2.5rem;
+      text-align: center;
+      border: 1.5px solid $second-color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+    }
+
+    .fa:hover {
+      border: 1.5px solid $main-color;
+    }
+  }
+}
+
+// Navigation
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: $main-back-color;
+
+  .logo img {
+    width: 8rem;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  li {
+    list-style: none;
+
+    a {
+      color: $main-color;
+      font-size: 1.3rem;
+    }
+
+    a:hover {
+      text-decoration: underline $second-color;
+    }
+  }
+
+  .ham-menu {
+    display: none;
+    cursor: pointer;
+  }
+
+  .phone-nav {
+    display: none;
+  }
+}
+
+.backgound-black {
+  background-color: $main-back-color;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 11;
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.overlap-text {
+  text-align: center;
+  font-size: 3rem;
+  padding: 1rem;
+  border-radius: 3px;
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: $second-color;
+  }
+
+  p {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 1rem;
+    font-family: $second-font;
+    color: $main-color;
+  }
+}
+
+@media (max-width: 46.63em) {
+  header {
+    display: flex;
+    justify-content: start;
+
+    .logo img {
+      width: 6rem;
+      margin-left: 2rem;
+    }
+
+    li {
+      display: none;
+    }
+
+    .ham-menu {
+      display: block;
+      margin: auto 0;
+      margin-left: auto;
+      margin-right: 2rem;
+
+      img {
+        width: 2rem;
+      }
+    }
+
+    .side-nav-phone {
+      z-index: 12;
+      position: fixed;
+      background-color: $second-back-color;
+      top: 0;
+      padding-top: 3rem;
+      width: 0;
+      height: 100vh;
+      transition: width 0.5s ease;
+      .phone-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        opacity: 0;
+        li {
+          display: flex;
+          border-bottom: 1px solid $main-back-color;
+          width: 16rem;
+          padding: 1rem 0 1rem 4rem;
+        }
+
+        a {
+          color: $main-color;
+        }
+
+        a:hover {
+          text-decoration: underline $second-color;
+        }
+
+        .close {
+          display: flex;
+          margin: 0 1.5rem 1rem auto;
+
+          img {
+            width: 1.1rem;
+            cursor: pointer;
+          }
+        }
+
+        .header-social {
+          display: flex;
+          height: fit-content;
+          margin: 0 auto;
+          a {
+            color: $main-color;
+            margin-top: 2rem;
+            margin-right: 1rem;
+          }
+
+          a:hover {
+            text-decoration: none;
+          }
+          .fa {
+            font-size: 1.5rem;
+            height: 2.5rem;
+            width: 2.5rem;
+            text-align: center;
+            border: 1.5px solid $second-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+          }
+
+          .fa:hover {
+            border: 1.5px solid $main-color;
+          }
+        }
+      }
+    }
+  }
+
+  .contact-header {
+    flex-direction: column;
+    align-items: center;
+    .header-social {
+      margin: 0 auto;
+      margin-bottom: 2rem;
+    }
+
+    .message-header {
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 28.25em) {
+  .contact-header {
+    .message-header {
+      .tag {
+        gap: 6px;
+        a {
+          font-size: 0.8rem;
+        }
+
+        img {
+          width: 1.8rem;
+        }
+      }
+    }
+  }
+}

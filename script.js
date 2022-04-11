@@ -1,5 +1,4 @@
 // Swiper
-// if (window.location.pathname == '/index.html') {
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   // direction: 'vertical',
@@ -32,7 +31,6 @@ const swiper = new Swiper('.swiper', {
     onlyInViewport: false,
   },
 });
-// }
 // Hamburger menu
 const body = document.querySelector('body');
 
