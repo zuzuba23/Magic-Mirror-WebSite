@@ -105,6 +105,4 @@ socials.forEach((social) => {
 });
 
 // Gallery
-if (window.location.pathname == '/index.html') {
-  lightGallery(document.querySelector('.gallery'));
-}
+lightGallery(document.querySelector('.gallery'));

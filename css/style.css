@@ -1168,6 +1168,12 @@ footer a:hover {
   }
 }
 
+@media (max-width: 62.5em) {
+  .video-mirror {
+    height: 30rem;
+  }
+}
+
 @media (max-width: 43.75em) {
   .video-mirror {
     height: 20rem;
