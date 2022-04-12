@@ -357,6 +357,11 @@ body {
   margin-bottom: 5rem;
 }
 
+.servicii-row .image-servicii .servicii-video {
+  max-width: 100%;
+  height: auto;
+}
+
 .servicii-row .image-servicii img {
   max-width: 100%;
   height: auto;
