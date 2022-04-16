@@ -106,3 +106,23 @@ socials.forEach((social) => {
 
 // Gallery
 lightGallery(document.querySelector('.gallery'));
+
+// Delete Link #
+
+const deleteLinks = document.querySelectorAll('.link');
+
+deleteLinks.forEach((deleteLink) => {
+  deleteLink.addEventListener('click', () => {
+    setTimeout(() => {
+      removeHash();
+    }, 5);
+  });
+});
+
+let removeHash = () => {
+  history.replaceState(
+    '',
+    document.title,
+    window.location.origin + window.location.pathname + window.location.search
+  );
+};
