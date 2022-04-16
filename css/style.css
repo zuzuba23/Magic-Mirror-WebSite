@@ -1,25 +1,19 @@
-.servicii-row .text-servicii button, .preturi .pret button, .despre-noi .text-despre-noi button {
-  width: 7rem;
-  height: 2.4rem;
-  margin: 1.5rem 0;
+.servicii-row .text-servicii .btn-link, .preturi .pret .btn-link, .despre-noi .text-despre-noi .btn-link {
+  padding: 0.7rem;
   border: 1px solid #1db9df;
   color: #ffff;
-  border-radius: 2px;
+  border-radius: 3px;
   background-color: rgba(255, 255, 255, 0);
   font-size: 0.9rem;
-  box-sizing: content-box;
   transition: 0.3s;
   cursor: pointer;
   text-transform: uppercase;
+  font-size: 0.9rem;
 }
 
-.servicii-row .text-servicii button a, .preturi .pret button a, .despre-noi .text-despre-noi button a {
-  color: #ffff;
-}
-
-.servicii-row .text-servicii button:hover, .preturi .pret button:hover, .despre-noi .text-despre-noi button:hover {
+.servicii-row .text-servicii .btn-link:hover, .preturi .pret .btn-link:hover, .despre-noi .text-despre-noi .btn-link:hover {
   background-color: #1db9df;
-  color: rgba(14, 13, 13, 0.955);
+  color: #ffff;
 }
 
 .services-title h2 span, .servicii-row .text-servicii h2 span, .despre-noi .text-despre-noi h2 span, .despre-noi .text-despre-noi h3 span, .title-avantaje h2 span, .gallery-title h2 span, .testimonials .title-testimonials h2 span, .title-contact h2 span, footer h3 span {
@@ -384,10 +378,7 @@ body {
 
 .servicii-row .text-servicii p {
   font-size: 1.3rem;
-}
-
-.servicii-row .text-servicii button {
-  width: 10rem;
+  margin-bottom: 1rem;
 }
 
 .servicii-row .text-servicii ul {
@@ -426,6 +417,7 @@ body {
   font-size: 1.5rem;
   margin: 1rem 0;
   color: #1db9df;
+  margin-bottom: 2rem;
 }
 
 .preturi .pret ul {
@@ -449,6 +441,10 @@ body {
   max-width: 100%;
   height: auto;
   border-radius: 3px;
+}
+
+.preturi .pret .btn-link {
+  padding: 0.7rem 1.5rem;
 }
 
 .preturi .pret h2 {
@@ -517,10 +513,14 @@ body {
 }
 
 .despre-noi .text-despre-noi li {
-  margin-bottom: 0.7rem;
+  margin-bottom: 2rem;
   list-style: circle;
   font-size: clamp(0.7rem, 1.2rem, 3rem);
   text-align: start;
+}
+
+.despre-noi .text-despre-noi .btn-link {
+  padding: 0.7rem 1.5rem;
 }
 
 .despre-noi .phone {

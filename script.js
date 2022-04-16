@@ -48,6 +48,8 @@ const closeMenuX = document
 
 const nav = document.querySelector('.side-nav-phone ');
 
+phoneMenu.style.visibility = 'hidden';
+
 function openPhoneMenu() {
   background.style.display = 'block';
   body.style.overflow = 'hidden';
@@ -115,7 +117,7 @@ deleteLinks.forEach((deleteLink) => {
   deleteLink.addEventListener('click', () => {
     setTimeout(() => {
       removeHash();
-    }, 5);
+    }, 1);
   });
 });
 

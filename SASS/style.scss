@@ -108,12 +108,17 @@ body {
 
     p {
       font-size: 1.3rem;
+      margin-bottom: 1rem;
     }
 
-    button {
-      @extend %btn;
-      width: 10rem;
+    .btn-link {
+      @extend %link;
     }
+
+    // button {
+    //   @extend %btn;
+    //   width: 10rem;
+    // }
 
     ul {
       text-align: start;
@@ -154,6 +159,7 @@ body {
       font-size: 1.5rem;
       margin: 1rem 0;
       color: $second-color;
+      margin-bottom: 2rem;
     }
 
     ul {
@@ -179,8 +185,13 @@ body {
       border-radius: 3px;
     }
 
-    button {
-      @extend %btn;
+    // button {
+    //   @extend %btn;
+    // }
+
+    .btn-link {
+      @extend %link;
+      padding: 0.7rem 1.5rem;
     }
 
     h2 {
@@ -267,14 +278,19 @@ body {
     }
 
     li {
-      margin-bottom: 0.7rem;
+      margin-bottom: 2rem;
       list-style: circle;
       font-size: clamp(0.7rem, 1.2rem, 3rem);
       text-align: start;
     }
 
-    button {
-      @extend %btn;
+    // button {
+    //   @extend %btn;
+    // }
+
+    .btn-link {
+      @extend %link;
+      padding: 0.7rem 1.5rem;
     }
   }
 
