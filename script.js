@@ -117,7 +117,7 @@ deleteLinks.forEach((deleteLink) => {
   deleteLink.addEventListener('click', () => {
     setTimeout(() => {
       removeHash();
-    }, 1);
+    }, 0000);
   });
 });
 
