@@ -1,4 +1,4 @@
-.despre-noi .text-despre-noi .btn-link, .preturi .pret .btn-link, .servicii-row .text-servicii .btn-link {
+.gallery-title .title-templates .personalized-template a, .gallery-title .title-templates a, .despre-noi .text-despre-noi .btn-link, .preturi .pret .btn-link, .servicii-row .text-servicii .btn-link {
   padding: 0.7rem;
   border: 1px solid #1db9df;
   color: white;
@@ -11,7 +11,7 @@
   font-size: 0.9rem;
 }
 
-.despre-noi .text-despre-noi .btn-link:hover, .preturi .pret .btn-link:hover, .servicii-row .text-servicii .btn-link:hover {
+.gallery-title .title-templates a:hover, .despre-noi .text-despre-noi .btn-link:hover, .preturi .pret .btn-link:hover, .servicii-row .text-servicii .btn-link:hover {
   background-color: #1db9df;
   color: white;
 }
@@ -556,7 +556,60 @@ body {
 .gallery-title .gallery img {
   border-radius: 3px;
 }
+.gallery-title .template-title {
+  font-size: 1.5rem;
+  margin-top: 5rem;
+  padding-top: 1rem;
+  color: white;
+  border-top: 1px solid #1db9df;
+}
+.gallery-title .title-templates {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+.gallery-title .title-templates .template {
+  margin-bottom: 5rem;
+}
+.gallery-title .title-templates .template:first-child {
+  margin-right: 10rem;
+}
+.gallery-title .title-templates .personalized-template a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12rem;
+  gap: 1rem;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+.gallery-title .title-templates .personalized-template img {
+  width: 1.5rem;
+  filter: brightness(0) invert(1);
+}
+.gallery-title .title-templates .personalized-template p {
+  margin-bottom: 0.7rem;
+}
 
+@media (max-width: 55em) {
+  .gallery-title .title-templates .template {
+    margin-bottom: 3rem;
+  }
+  .gallery-title .title-templates .template:first-child {
+    margin-right: 2rem;
+  }
+}
+@media (max-width: 29.0625em) {
+  .gallery-title .title-templates {
+    flex-direction: column;
+  }
+  .gallery-title .title-templates .template:first-child {
+    margin-right: 0rem;
+  }
+}
 .swiper {
   height: 25rem;
   margin-top: 3rem;
