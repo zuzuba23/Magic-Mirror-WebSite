@@ -149,11 +149,10 @@ body {
 
   .pret {
     background-color: lighten($second-back-color, 10%);
-    // background-color: $main-back-color;
     padding: 0.5rem;
     border-radius: 3px;
     box-shadow: 0px 0px 10px $second-color;
-    height: 45rem;
+    height: 50rem;
 
     p {
       font-size: 1.5rem;
@@ -181,13 +180,9 @@ body {
 
     img {
       max-width: 100%;
-      height: auto;
+      height: 10rem;
       border-radius: 3px;
     }
-
-    // button {
-    //   @extend %btn;
-    // }
 
     .btn-link {
       @extend %link;
