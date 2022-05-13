@@ -39,38 +39,18 @@ footer h3 span:after, .title-contact h2 span:after, .testimonials .title-testimo
 
 .contact-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 1rem;
   background-color: rgba(14, 13, 13, 0.955);
   border-bottom: 2px solid rgb(35, 34, 34);
 }
-.contact-header .message-header {
-  color: white;
-  display: flex;
-  gap: 1rem;
-}
-.contact-header .message-header .tag {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  cursor: pointer;
-}
-.contact-header .message-header .tag img {
-  width: 2.5rem;
-}
-.contact-header .message-header .tag a {
-  color: white;
-}
-.contact-header .message-header .tag a:hover {
-  color: #1db9df;
-}
 .contact-header .header-social {
   display: flex;
-  height: fit-content;
 }
 .contact-header .header-social a {
   color: white;
   margin-right: 1rem;
+  display: flex;
 }
 .contact-header .header-social a:hover {
   text-decoration: none;
@@ -228,7 +208,6 @@ a {
   header .side-nav-phone .phone-nav .header-social {
     display: flex;
     height: fit-content;
-    margin: 0 auto;
   }
   header .side-nav-phone .phone-nav .header-social a {
     color: white;
@@ -256,10 +235,6 @@ a {
   .contact-header {
     flex-direction: column;
     align-items: center;
-  }
-  .contact-header .header-social {
-    margin: 0 auto;
-    margin-bottom: 2rem;
   }
   .contact-header .message-header {
     justify-content: space-between;
@@ -421,10 +396,10 @@ body {
   color: #1db9df;
 }
 .preturi div:first-child h2 {
-  margin-top: 4.7rem;
+  margin-top: 4.5rem;
 }
 .preturi div:nth-child(2) h2 {
-  margin-top: 2.2rem;
+  margin-top: 0rem;
 }
 
 .despre-noi {

@@ -1,42 +1,44 @@
 // Message Header
 .contact-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 1rem;
   background-color: $main-back-color;
   border-bottom: 2px solid $second-back-color;
 
-  .message-header {
-    color: $main-color;
-    display: flex;
-    gap: 1rem;
+  // .message-header {
+  //   color: $main-color;
+  //   display: flex;
+  //   gap: 1rem;
 
-    .tag {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      cursor: pointer;
+  //   .tag {
+  //     display: flex;
+  //     align-items: center;
+  //     gap: 1rem;
+  //     cursor: pointer;
 
-      img {
-        width: 2.5rem;
-      }
+  //     img {
+  //       width: 2.5rem;
+  //     }
 
-      a {
-        color: $main-color;
-      }
+  //     a {
+  //       color: $main-color;
+  //     }
 
-      a:hover {
-        color: $second-color;
-      }
-    }
-  }
+  //     a:hover {
+  //       color: $second-color;
+  //     }
+  //   }
+  // }
 
   .header-social {
     display: flex;
-    height: fit-content;
+    // height: fit-content;
+
     a {
       color: $main-color;
       margin-right: 1rem;
+      display: flex;
     }
 
     a:hover {
@@ -218,7 +220,7 @@ a {
         .header-social {
           display: flex;
           height: fit-content;
-          margin: 0 auto;
+          // margin: 0 auto;
           a {
             color: $main-color;
             margin-top: 2rem;
@@ -251,10 +253,6 @@ a {
   .contact-header {
     flex-direction: column;
     align-items: center;
-    .header-social {
-      margin: 0 auto;
-      margin-bottom: 2rem;
-    }
 
     .message-header {
       justify-content: space-between;
